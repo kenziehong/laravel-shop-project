@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'SanPhamController@Moi')->name('/');
+Route::get('demo', 'MenuController@HienThi')->name('demo');
