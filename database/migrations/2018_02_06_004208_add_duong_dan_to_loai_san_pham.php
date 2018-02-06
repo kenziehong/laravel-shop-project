@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateLoaiSanPhamTable extends Migration
+class AddDuongDanToLoaiSanPham extends Migration
 {
     /**
      * Run the migrations.
@@ -12,13 +12,8 @@ class CreateLoaiSanPhamTable extends Migration
      * @return void
      */
     public function up()
-    {
-        Schema::create('loai_san_pham', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('ten_loai');
-            $table->integer('menu_loai_id');
-            $table->engine = 'InnoDB';
-            $table->timestamps();
+    {    Schema::table('loai_san_pham', function($table) {
+            $table->string('duong_dan');
         });
     }
 
@@ -29,6 +24,8 @@ class CreateLoaiSanPhamTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('loai_san_pham', function($table) {
+            $table->dropColumn('duong_dan');
+        });
     }
 }
