@@ -284,7 +284,7 @@ ul.dropdown-menu.drp-mnu li a i {
 .w3ls_vegetables ul li {
     list-style-type: none;
 }
-.w3ls_vegetables ul li:first-child {
+.w3ls_vegetables ul li{
     margin-bottom:.5em;
 }
 .w3ls_vegetables ul li a {

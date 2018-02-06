@@ -9,6 +9,6 @@ class MenuController extends Controller
     public function HienThi()
     {
        $ds_menu = menu_loai::with('loai_san_pham')->get();
-        return view('layouts.banner', ['ds_menu' => $ds_menu]);
+        return view('main');
     }
 }
