@@ -14,8 +14,8 @@
 									<figure>
 										<div class="snipcart-item block" >
 											<div class="snipcart-thumb">
-												<a href="single.html"><img title=" " alt=" " src="{{ asset('images/san_pham/' . $moi->hinh) }}" class="hinh_anh" /></a>		
-												<a href="single.html"><p class="tieu_de">{{$moi->ten_sp}}</p></a>
+												<a href="{{route('chi_tiet',$moi->ma_sp)}}"><img title=" " alt=" " src="{{ asset('images/san_pham/' . $moi->hinh) }}" class="hinh_anh" /></a>		
+												<a href="{{route('chi_tiet',$moi->ma_sp)}}"><p class="tieu_de">{{$moi->ten_sp}}</p></a>
 												<h4>{{number_format($moi->don_gia_khuyen_mai)}} đ<span>{{number_format($moi->don_gia)}} đ</span></h4>
 											</div>
 											<div class="snipcart-details top_brand_home_details">

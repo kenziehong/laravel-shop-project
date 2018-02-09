@@ -12,4 +12,4 @@
 */
 
 Route::get('/', 'SanPhamController@Moi')->name('/');
-Route::get('demo', 'MenuController@HienThi')->name('demo');
+Route::get('chi_tiet/{ma_sp}','SanPhamController@ChiTietSP')->name('chi_tiet');
