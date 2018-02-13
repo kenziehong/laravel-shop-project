@@ -1,11 +1,13 @@
 @section('title','Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Home :: w3layouts')
 @section('content')
 <div class="agileinfo_single">
-				<h5>{{$chi_tiet->ten_sp}}</h5>
 				<div class="col-md-4 agileinfo_single_left">
 					<img id="example" src="{{ asset('images/san_pham/' . $chi_tiet->hinh) }}" alt=" " class="img-responsive" />
 				</div>
 				<div class="col-md-8 agileinfo_single_right">
+					<div class="w3agile_description">
+						<h5>{{$chi_tiet->ten_san_pham}}</h5>
+					</div>
 					<div class="rating1">
 						<span class="starRating">
 							<input id="rating5" type="radio" name="rating" value="5">
@@ -21,11 +23,7 @@
 						</span>
 					</div>
 					<div class="w3agile_description">
-						<h4>Description :</h4>
-						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
-							officia deserunt mollit anim id est laborum.Duis aute irure dolor in 
-							reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-							pariatur.</p>
+						<h4>Thương Hiệu: {{$chi_tiet->ThuongHieu->ten_thuong_hieu}}</h4>
 					</div>
 					<div class="snipcart-item block">
 						<div class="snipcart-thumb agileinfo_single_right_snipcart">
