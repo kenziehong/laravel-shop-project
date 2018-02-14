@@ -11,5 +11,8 @@ class loai_san_pham extends Model
     {
         return $this->belongsTo(menu_loai::class);
     }
-    
+    public function SanPham()
+    {
+        return $this->hasMany(SanPham::class);
+    }
 }

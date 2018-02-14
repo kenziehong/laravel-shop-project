@@ -1,4 +1,4 @@
-@section('title','Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Home :: w3layouts')
+@section('title',"{$chi_tiet->ten_san_pham}")
 @section('content')
 <div class="agileinfo_single">
 		<div class="col-md-4 agileinfo_single_left">
@@ -40,7 +40,7 @@
 				<div class="panel-heading">Mô tả sản phẩm</div>	
 				<div class="panel-body">
 					<div class="product-detail__description">
-						{{$chi_tiet->noi_dung_chi_tiet}}
+						{!!$chi_tiet->noi_dung_chi_tiet!!}
 					</div>
 				</div>
 			</div>

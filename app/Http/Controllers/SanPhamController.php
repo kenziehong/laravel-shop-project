@@ -1,10 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use Illuminate\Support\Facades\DB;
 use App\SanPham;
 use App\Http\Controllers\Controller;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 class SanPhamController extends Controller
 {
@@ -15,7 +14,7 @@ class SanPhamController extends Controller
     }
     public function ChiTietSP($ma_sp)
     {
-       $chi_tiet_sp=SanPham::with('ThuongHieu')->findOrFail($ma_sp);
+        $chi_tiet_sp=SanPham::with('ThuongHieu')->findOrFail($ma_sp);
         return view('pages.chi_tiet',['chi_tiet'=>$chi_tiet_sp]);
     }
 }

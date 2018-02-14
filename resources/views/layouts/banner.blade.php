@@ -21,7 +21,7 @@
 								<div class="w3ls_vegetables">
 									<ul>
 										@foreach ($cha->loai_san_pham as $con)	
-										<li><a href="vegetables.html">{{$con->ten_loai}}</a></li>
+										<li><a href="{{route('loai_sp',$con->id)}}">{{$con->ten_loai}}</a></li>
 										@endforeach
 									</ul>
 								</div>                  
