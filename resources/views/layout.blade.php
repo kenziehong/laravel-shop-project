@@ -7,7 +7,7 @@
 <body>
 	@include('layouts.header')
 	@include('layouts.banner')
-	@yield('slider')
+	@include('layouts.slider_layout')
 	@yield('content')
 	@include('layouts.footer')
 	@include('layouts.script')
