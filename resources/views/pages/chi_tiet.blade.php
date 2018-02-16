@@ -24,7 +24,7 @@
 				</span>
 			</div>
 			<div class="w3agile_description">
-				<h4>Thương Hiệu: {{$chi_tiet->ThuongHieu->ten_thuong_hieu}}</h4>
+				<h4>Thương Hiệu: <a href="{{route('thuong_hieu',$chi_tiet->ThuongHieu->id)}}"> {{$chi_tiet->ThuongHieu->ten_thuong_hieu}}</h4>
 			</div>
 			<div class="snipcart-item block">
 				<div class="snipcart-thumb agileinfo_single_right_snipcart">
