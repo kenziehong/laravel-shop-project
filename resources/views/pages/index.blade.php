@@ -18,9 +18,11 @@
 												<a href="{{route('chi_tiet',$moi->id)}}"><p class="tieu_de">{{$moi->ten_san_pham}}</p></a>
 												<h4>{{number_format($moi->don_gia_khuyen_mai)}} đ<span>{{number_format($moi->don_gia)}} đ</span></h4>
 											</div>
+											{{ Form::open(['action' => ['CartController@Add',$moi->id],'method'=>'put']) }}
 											<div class="snipcart-details top_brand_home_details">
-												<input type="button" name="submit" value="Thêm vào giỏ hàng" class="button" />
+												{{Form::submit('Thêm vào giỏ hàng')}}
 											</div>
+											{{Form::close()}}
 										</div>
 									</figure>
 								</div>
