@@ -1,5 +1,6 @@
 @extends('layout')
 @section('title',"{$loai_sp->ten_loai}")
+@section('tieu_de',"{$loai_sp->ten_loai}")
 @section('content')
 <div class="w3ls_w3l_banner_nav_right_grid w3ls_w3l_banner_nav_right_grid_sub">
 				<h3>{{$loai_sp->ten_loai}}</h3>

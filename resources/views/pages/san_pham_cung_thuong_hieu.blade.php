@@ -1,5 +1,6 @@
 @extends('layout')
 @section('title',"{$thuong_hieu->ten_thuong_hieu}")
+@section('tieu_de','Thương hiệu')
 @section('content')
 <div class="w3ls_w3l_banner_nav_right_grid w3ls_w3l_banner_nav_right_grid_sub">
 				<h3>{{$thuong_hieu->ten_thuong_hieu}}</h3>

@@ -1,5 +1,6 @@
 @extends('layout')
 @section('title',"{$chi_tiet->ten_san_pham}")
+@section('tieu_de','Chi tiết sản phẩm')
 @section('content')
 <div class="agileinfo_single">
 		<div class="col-md-4 agileinfo_single_left">

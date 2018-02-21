@@ -6,6 +6,7 @@
 
 <body>
 	@include('layouts.header')
+    @include('layouts.thanh_danh_muc')
 	@include('layouts.banner')
 	@include('layouts.slider_layout')
 	@yield('content')

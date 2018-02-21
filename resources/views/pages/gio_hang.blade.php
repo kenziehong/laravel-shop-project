@@ -1,5 +1,6 @@
-@extends('main')
+@extends('layout')
 @section('title','Giỏ Hàng cùa bạn')
+@section('tieu_de','Giỏ hàng')
 @section('content')
     @if(Cart::count()==0)
         Chưa có giỏ hàng
