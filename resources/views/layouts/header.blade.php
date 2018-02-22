@@ -21,11 +21,29 @@
 					<div class="mega-dropdown-menu">
 						<div class="w3ls_vegetables">
 							<ul class="dropdown-menu drp-mnu">
-								<li><a href="{{route('login')}}">Login</a></li>
-								<li><a href="{{route('register')}}">Sign Up</a></li>
+									<!-- Authentication Links -->
+									@if (Auth::guest())
+										<li><a href="{{ route('login') }}">Login</a></li>
+										<li><a href="{{ route('register') }}">Register</a></li>
+									@else
+										<li class="dropdown">
+											{{ Auth::user()->name }}
+										<li>
+											<a href="{{ route('logout') }}"
+											   onclick="event.preventDefault();
+											 document.getElementById('logout-form').submit();">
+												Logout
+											</a>
+
+											<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+												{{ csrf_field() }}
+											</form>
+										</li>
+										</li>
+									@endif
 							</ul>
-						</div>                  
-					</div>	
+						</div>
+					</div>
 				</li>
 			</ul>
 		</div>
@@ -39,7 +57,7 @@
 	$(document).ready(function() {
 		 var navoffeset=$(".agileits_header").offset().top;
 		 $(window).scroll(function(){
-			var scrollpos=$(window).scrollTop(); 
+			var scrollpos=$(window).scrollTop();
 			if(scrollpos >=navoffeset){
 				$(".agileits_header").addClass("fixed");
 			}else{
