@@ -21,8 +21,8 @@
 					<div class="mega-dropdown-menu">
 						<div class="w3ls_vegetables">
 							<ul class="dropdown-menu drp-mnu">
-								{{--<li><a href="{{route('dang_nhap')}}">Login</a></li>--}}
-								{{--<li><a href="{{route('dang_ki')}}">Sign Up</a></li>--}}
+								<li><a href="{{route('login')}}">Login</a></li>
+								<li><a href="{{route('register')}}">Sign Up</a></li>
 							</ul>
 						</div>                  
 					</div>	

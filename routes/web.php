@@ -19,3 +19,6 @@ Route::put('them-gio-hang/{ma_sp}','CartController@Add');
 Route::get('gio_hang', function () {
     return view('pages.gio_hang');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
